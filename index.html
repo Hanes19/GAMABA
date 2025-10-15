@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMABA</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-crown me-2"></i>GAMABA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="literary-analysis.html">Literary Analysis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#webinar">Webinar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#brochure">E-Brochure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reflections">Reflections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#netiquette">Netiquette</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-bg" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-80">
+                                <div class="col-lg-6">
+                                    <h1 class="display-4 fw-bold text-white mb-4">GAMABA Awardees</h1>
+                                    <p style="margin: 0; padding: 0;"lead text-white mb-4">Literary Guardians of Philippine Heritage</p>
+                                    <p class="lead text-white mb-4">Celebrating the living treasures of Philippine</p>
+                                    <a href="#webinar" class="btn btn-warning btn-lg">Watch Our Webinar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-bg" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-80">
+                                <div class="col-lg-6">
+                                    <h1 class="display-4 fw-bold text-white mb-4">Literary Significance</h1>
+                                    <p class="lead text-white mb-4">Exploring the profound impact of GAMABA artists on Philippine literature</p>
+                                    <a href="#reflections" class="btn btn-warning btn-lg">Read Our Reflections</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-bg" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-80">
+                                <div class="col-lg-6">
+                                    <h1 class="display-4 fw-bold text-white mb-4">Cultural Heritage</h1>
+                                    <p class="lead text-white mb-4">Preserving and promoting Filipino traditions through digital storytelling</p>
+                                    <a href="#brochure" class="btn btn-warning btn-lg">View E-Brochure</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        
+        <!-- Group Information (inside hero, directly below the carousel) -->
+        <div id="group-info" class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 mx-auto">
+                        <div class="group-card rounded shadow-sm p-3 p-md-4 mx-auto">
+                            <div class="group-layout">
+                                <div class="group-meta">
+                                    <h3 class="fw-bold mb-2">Group 1</h3>
+                                    <p class="mb-1 text-muted">Section: COC-C2-G11-STEM-03-P</p>
+                                    <p class="mb-0 text-muted">School: Cagayan De Ora College - Puerto Campus</p>
+                                </div>
+                                <div class="group-members">
+                                    <h6 class="text-uppercase fw-bold mb-2">Members</h6>
+                                    <div class="members-list small">
+                                        <div class="member">ABAO, GRACE PIKET</div>
+                                        <div class="member">AMOR, CARL DANIEL CASTRO</div>
+                                        <div class="member">AMPO, RHIAN JOHN SACAL</div>
+                                        <div class="member">ARNOZA, AJ BOY MADERSE</div>
+                                        <div class="member">ASIÑERO, KIRK HEARKEN N/A</div>
+                                        <div class="member">ASIS, LARIZA MAE MABIDA</div>
+                                        <div class="member">AVILA, CHRISSA JANE ANTIPORTA</div>
+                                        <div class="member">BADE, ZOE DUMAGO</div>
+                                        <div class="member">BALABA, KYLE ETHAN SIMODLAN</div>
+                                        <div class="member">BERSANO, NIXON SANCHEZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- GAMABA Awardees Section -->
+    <section id="awardees" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-5 fw-bold text-center mb-4">
+                        <i class="fas fa-award me-3 text-primary"></i>GAMABA Awardees
+                    </h2>
+                    <p class="lead text-center mb-5">Culture — artists whose voices, stories, and traditions shape our nation’s identity.</p>
+
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">GAMABA Awardees (1993)</h5>
+                                    <ul class="mb-0">
+                                        <li class="mb-3">
+                                            <strong>Ginaw Bilog</strong><br>
+                                            <em>Hanunuo Mangyan of Mansalay, Mindoro</em><br>
+                                            <span>For preserving the ambahan, a traditional Mangyan poetic form written on bamboo.</span>
+                                        </li>
+                                        <li class="mb-3">
+                                            <strong>Masino Intaray</strong><br>
+                                            <em>Pala’wan of Brooke’s Point, Palawan</em><br>
+                                            <span>Master of basal (gong ensemble), kulilal (songs), and bagit (instrumental pieces).</span>
+                                        </li>
+                                        <li>
+                                            <strong>Samaon Sulaiman</strong><br>
+                                            <em>Maguindanaon of Mamasapano, Maguindanao</em><br>
+                                            <span>Renowned master of the kutiyapi (two-stringed lute).</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">GAMABA Awardees (1998)</h5>
+                                    <ul class="mb-0">
+                                        <li class="mb-3">
+                                            <strong>Lang Dulay</strong><br>
+                                            <em>T’boli of Lake Sebu, South Cotabato</em><br>
+                                            <span>Weaver of t’nalak, a traditional abaca fabric that embodies T’boli dreams and stories.</span>
+                                        </li>
+                                        <li class="mb-3">
+                                            <strong>Salinta Monon</strong><br>
+                                            <em>Tagabawa Bagobo of Bansalan, Davao del Sur</em><br>
+                                            <span>Expert weaver of traditional Bagobo inabal fabric.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Alonzo Saclag</strong><br>
+                                            <em>Kalinga of Lubuagan, Kalinga</em><br>
+                                            <span>Music and dance master who preserved Kalinga performing traditions.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">GAMABA Awardees (2000)</h5>
+                                    <ul class="mb-0">
+                                        <li>
+                                            <strong>Federico “Tuohan” Caballero</strong><br>
+                                            <em>Panay Bukidnon of Calinog, Iloilo</em><br>
+                                            <span>Epic chanter of Hinilawod, one of the longest epics in the world.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">GAMABA Awardees (2006)</h5>
+                                    <ul class="mb-0">
+                                        <li>
+                                            <strong>Darhata Sawabi</strong><br>
+                                            <em>Tausug of Parang, Sulu</em><br>
+                                            <span>Traditional weaver of pis syabit, an intricate Tausug headcloth.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">GAMABA Awardees (2004)</h5>
+                                    <ul class="mb-0">
+                                        <li class="mb-3">
+                                            <strong>Uwang Ahadas</strong><br>
+                                            <em>Yakan of Lamitan, Basilan</em><br>
+                                            <span>Master of Yakan traditional instruments such as kwintangan kayu and gabbang.</span>
+                                        </li>
+                                        <li>
+                                            <strong>Eduardo Mutuc</strong><br>
+                                            <em>Kapampangan of Apalit, Pampanga</em><br>
+                                            <span>Expert in crafting religious and ornamental silver and brass art.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">GAMABA Awardees (2012)</h5>
+                                    <ul class="mb-0">
+                                        <li class="mb-3">
+                                            <strong>Magdalena Gamayo</strong><br>
+                                            <em>Ilocano of Pinili, Ilocos Norte</em><br>
+                                            <span>Master weaver of abel (traditional Ilocano textile).</span>
+                                        </li>
+                                        <li>
+                                            <strong>Teofilo Garcia</strong><br>
+                                            <em>Ilocano of San Quintin, Abra</em><br>
+                                            <span>Craftsman of the tabungaw (gourd) hat — both functional and artistic.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Webinar Video Section -->
+    <section id="webinar" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">
+                        <i class="fas fa-video me-3 text-primary"></i>GAMABA Awardees Webinar
+                    </h2>
+                    <p class="lead mb-5">Watch our recorded webinar exploring the literary significance of GAMABA awardees and their contributions to Philippine culture.</p>
+                    
+                    <div class="video-container mb-5">
+                        <div class="video-wrapper">
+                            <!-- Changed: use YouTube embed instead of local video files -->
+                            <iframe
+                                width="100%"
+                                height="500"
+                                src="https://www.youtube.com/embed/tnSZ22tiX8Q?rel=0&modestbranding=1"
+                                title="GAMABA Awardees Webinar"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    
+                    <!-- Video Description -->
+                    <div class="video-info bg-white p-4 rounded shadow">
+                        <h4 class="mb-3">Webinar Highlights</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>In-depth analysis of GAMABA awardees' literary contributions</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Cultural significance in Philippine literature</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Preservation of traditional storytelling methods</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Modern relevance of cultural heritage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-Brochure Section -->
+    <section id="brochure" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">
+                        <i class="fas fa-book me-3 text-primary"></i>Digital E-Brochure
+                    </h2>
+                    <p class="lead mb-5">Explore our comprehensive digital brochure featuring GAMABA awardees and their literary works.</p>
+                    
+                    <!-- E-Brochure Embed/Link -->
+                    <div class="brochure-container mb-5">
+                        <div class="mt-3">
+                            <a href="brochure.pdf" target="_blank" class="btn btn-primary me-2">
+                                <i class="fas fa-file-pdf me-2"></i>Open Brochure
+                            </a>
+                            <a href="brochure.pdf" download class="btn btn-outline-primary">
+                                <i class="fas fa-download me-2"></i>Download PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Group Reflections Section -->
+    <section id="reflections" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-5 fw-bold text-center mb-5">
+                        <i class="fas fa-pen-fancy me-3 text-primary"></i>Group Reflections & Literary Content
+                    </h2>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fas fa-quote-left text-primary me-2"></i>Literary Summarized
+                                    </h5>
+                                    <p class="card-text">Our group's comprehensive analysis of how GAMABA awardees have influenced Philippine literature and cultural identity.</p>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fas fa-heart text-primary me-2"></i>Cultural Impact
+                                    </h5>
+                                    <p class="card-text">Exploring the profound cultural impact of GAMABA artists on contemporary Philippine society and literature.</p>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fas fa-users text-primary me-2"></i>Group Insights
+                                    </h5>
+                                    <p class="card-text">Personal reflections from our group members on the significance of preserving cultural heritage through literature.</p>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fas fa-star text-primary me-2"></i>Literary Significance
+                                    </h5>
+                                    <p class="card-text">An in-depth examination of how GAMABA awardees have shaped the landscape of Philippine literary tradition.</p>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Netiquette Section -->
+    <section id="netiquette" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-5 fw-bold text-center mb-4">
+                        <i class="fas fa-shield-alt me-3 text-primary"></i>Netiquette Guidelines 
+                    </h2>
+                    <p class="lead text-center mb-5">Respectful Online Communication</p>
+                    <div class="row g-3 g-md-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="netiquette-card p-4 h-100">
+                                <div class="netiquette-icon mb-2"><i class="fas fa-handshake fa-lg"></i></div>
+                                <h6 class="fw-bold mb-2">Show Respect and Appreciation</h6>
+                                <p class="mb-0">Speak kindly when commenting or posting. Honor the work of our GAMABA awardees by using respectful and thoughtful language.</p>
+                                <button class="btn btn-sm btn-outline-primary mt-3 explain-btn" data-key="respect">Explain</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="netiquette-card p-4 h-100">
+                                <div class="netiquette-icon mb-2"><i class="fas fa-bullseye fa-lg"></i></div>
+                                <h6 class="fw-bold mb-2">Stay on Topic</h6>
+                                <p class="mb-0">Focus your comments and discussions on Filipino culture, traditional arts, and our living treasures.</p>
+                                <button class="btn btn-sm btn-outline-primary mt-3 explain-btn" data-key="topic">Explain</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="netiquette-card p-4 h-100">
+                                <div class="netiquette-icon mb-2"><i class="fas fa-lightbulb fa-lg"></i></div>
+                                <h6 class="fw-bold mb-2">Think Before You Post</h6>
+                                <p class="mb-0">Make sure your messages are true, respectful, and related to the topic. Avoid spreading false information or hurtful opinions.</p>
+                                <button class="btn btn-sm btn-outline-primary mt-3 explain-btn" data-key="think">Explain</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="netiquette-card p-4 h-100">
+                                <div class="netiquette-icon mb-2"><i class="fas fa-language fa-lg"></i></div>
+                                <h6 class="fw-bold mb-2">Use Proper Language and Tone</h6>
+                                <p class="mb-0">Use polite and clear language. Remember that this website represents our pride in Filipino artistry — let’s keep it positive and educational.</p>
+                                <button class="btn btn-sm btn-outline-primary mt-3 explain-btn" data-key="language">Explain</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="netiquette-card p-4 h-100">
+                                <div class="netiquette-icon mb-2"><i class="fas fa-user-shield fa-lg"></i></div>
+                                <h6 class="fw-bold mb-2">Protect Privacy</h6>
+                                <p class="mb-0">Do not share personal or sensitive information about others, including the GAMABA artists, without permission.</p>
+                                <button class="btn btn-sm btn-outline-primary mt-3 explain-btn" data-key="privacy">Explain</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="netiquette-card p-4 h-100">
+                                <div class="netiquette-icon mb-2"><i class="fas fa-users fa-lg"></i></div>
+                                <h6 class="fw-bold mb-2">Be a Responsible Digital Citizen</h6>
+                                <p class="mb-0">Help maintain a respectful and inspiring online community. Report inappropriate behavior and support others who share our love for Philippine culture.</p>
+                                <button class="btn btn-sm btn-outline-primary mt-3 explain-btn" data-key="citizen">Explain</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Explanation panel -->
+                    <div id="netiquette-detail" class="mt-4">
+                        <div class="netiquette-card p-4 detail-card">
+                            <h6 class="fw-bold mb-2">Explanation</h6>
+                            <p class="mb-0 text-muted">Click “Explain” on any guideline to see more details here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h5 class="mb-3">GAMABA Digital Portfolio</h5>
+                    <p class="mb-3">Celebrating Philippine Cultural Heritage Through Digital Storytelling</p>
+                    <div class="social-links mb-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                    <p class="small text-muted">&copy; 2025 GAMABA Digital Portfolio. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

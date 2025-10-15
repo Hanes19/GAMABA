@@ -1,0 +1,548 @@
+/* Custom CSS for GAMABA Digital Portfolio */
+
+:root {
+    --primary-color: #603F26;
+    --secondary-color: #6C4E31;
+    --accent-color: #FFDBB5;
+    --light-color: #FFEAC5;
+    --dark-color: #603F26;
+    --success-color: #6C4E31;
+    --warning-color: #FFDBB5;
+    --danger-color: #603F26;
+    --info-color: #6C4E31;
+    --philippine-red: #603F26;
+    --philippine-blue: #6C4E31;
+    --philippine-yellow: #FFEAC5;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--light-color) !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+    color: var(--light-color) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    /* Subtle neutral background that doesn't fight with the carousel */
+    background: linear-gradient(120deg, #1c1612 0%, #2a211a 100%);
+    padding: 3rem 0;
+
+}
+
+#group-info .group-card {
+    max-width: 1280px;
+    background: rgba(20, 15, 12, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #f5f2ef;
+}
+
+#group-info .group-card h3,
+#group-info .group-card h6 {
+    color: #f5f2ef;
+}
+
+#group-info .group-card .text-muted {
+    color: #d6cfc9 !important;
+}
+
+/* Two-column left-to-right layout inside the group card */
+#group-info .group-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 16px 24px;
+    align-items: start;
+}
+
+#group-info .group-meta {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    padding-right: 16px;
+}
+
+#group-info .group-members {
+    min-width: 0;
+}
+
+/* Responsive flex list for members (readable like nav) */
+#group-info .members-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+}
+
+#group-info .members-list .member {
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 768px) {
+    #group-info .group-layout {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    #group-info .group-meta {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        padding-bottom: 12px;
+        margin-bottom: 4px;
+    }
+}
+
+#heroCarousel {
+    margin: 2rem auto;
+    max-width: 1800px; /* larger so it fills most of the hero */
+    width: calc(100% - 2rem);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+
+.carousel-bg {
+    min-height: 62vh; /* tighter height so it fits naturally */
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Soft vignette overlay for edge fade similar to screenshot */
+.carousel-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* Softer edge + bottom fade to avoid harsh contrast */
+    background:
+        linear-gradient(to bottom, rgba(0,0,0,0.0) 60%, rgba(20, 15, 12, 0.45) 100%),
+        radial-gradient(120% 100% at 50% 50%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.45) 100%);
+    pointer-events: none;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: transparent;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background: white;
+}
+
+/* Video Section */
+.video-container {
+    position: relative;
+    background: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-info {
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Brochure Section */
+.brochure-container {
+    position: relative;
+}
+
+.brochure-wrapper {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pdf-container {
+    position: relative;
+    width: 100%;
+    height: min(80vh, 900px);
+}
+
+.brochure-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.brochure-placeholder {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* Literary Analysis - enhanced styles */
+.analysis-card {
+    background: linear-gradient(180deg, #ffffff 0%, #fffaf3 100%);
+    border: 1px solid rgba(255, 219, 181, 0.5);
+}
+
+.analysis-heading {
+    color: var(--primary-color);
+    position: relative;
+    padding-left: 14px;
+}
+
+.analysis-heading::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 18px;
+    background: var(--accent-color);
+    border-radius: 3px;
+}
+
+.analysis-subheading {
+    color: #3d3d3d;
+}
+
+.analysis-subtitle {
+    display: inline-flex;
+    align-items: center;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Netiquette Section */
+.netiquette-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.netiquette-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.netiquette-icon {
+    color: var(--primary-color);
+}
+
+/* Explanation detail card arrow */
+#netiquette-detail .detail-card {
+    position: relative;
+}
+
+#netiquette-detail .detail-card::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 24px;
+    border-width: 0 10px 12px 10px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent; /* match card bg */
+    filter: drop-shadow(0 -2px 2px rgba(0,0,0,0.05));
+}
+
+/* Buttons */
+.btn {
+    border-radius: 25px;
+    font-weight: 500;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    color: var(--light-color);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(96, 63, 38, 0.3);
+    color: var(--light-color);
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, var(--accent-color), var(--light-color));
+    border: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(45deg, var(--light-color), var(--accent-color));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 219, 181, 0.4);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--light-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(96, 63, 38, 0.3);
+}
+
+/* Sections */
+section {
+    position: relative;
+}
+
+.bg-light {
+    background: linear-gradient(135deg, var(--light-color) 0%, #FFF8F0 100%) !important;
+}
+
+/* Typography */
+.display-4,
+.display-5 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%) !important;
+}
+
+.social-links a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    color: var(--accent-color) !important;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .carousel-bg {
+        background-attachment: scroll;
+        min-height: 58vh;
+    }
+    
+    .video-wrapper {
+        padding-bottom: 75%; /* 4:3 aspect ratio for mobile */
+    }
+    
+    .btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .card-body {
+        padding: 1.5rem;
+    }
+    
+    .netiquette-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/* Additional Color Enhancements */
+.video-info {
+    border-left: 4px solid var(--accent-color);
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.netiquette-icon {
+    color: var(--accent-color);
+}
+
+/* Enhanced hover effects with new colors */
+.card:hover .card-title {
+    color: var(--secondary-color);
+}
+
+.netiquette-card:hover .netiquette-icon {
+    color: var(--primary-color);
+}
+
+/* Warm styling enhancements */
+.card {
+    border: 1px solid rgba(255, 234, 197, 0.3);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 25px rgba(255, 219, 181, 0.2) !important;
+}
+
+.netiquette-card {
+    border: 1px solid rgba(255, 234, 197, 0.2);
+}
+
+.netiquette-card:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 25px rgba(255, 219, 181, 0.15);
+}
